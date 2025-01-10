@@ -10,7 +10,7 @@ MasterTattoo es una página web en la que se adminstran tiendas de tatuajes
 - Node.js
 - React
 - Java
-- API consumida: [(https://api.thecatapi.com/v1/breeds)]
+- API consumida: [(https://api.mastertattoo)]
 
 *Características de la Aplicación*
 
