@@ -5,7 +5,6 @@ body {
 }
 .miembro-container {
     min-height: 100vh;
-    background-image: url('../assets/background-body.png');
 }
 .header-container {
     position: relative;
@@ -95,7 +94,7 @@ body {
     margin: 0 auto 10px;
 }
 .cargo {
-    color: #00a8cc;
+    color: #ffbb00;
     font-weight: bold;
     margin-top: 5px;
 }

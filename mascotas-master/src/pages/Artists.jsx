@@ -1,49 +1,37 @@
-import React from 'react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import imgCat from '../assets/cat.png'
+import {FaInstagram} from 'react-icons/fa';
+import imgCat from '../assets/cat.png';
 import "./groupPersons.css";
 
-const GroupPersons = () => {
+const Artists = () => {
   const miembros = [
     {
       id: 1,
-      nombre: "Andrea Contreras",
-      cargo: "Developer",
-      descripcion: "Passionate developer of the fronted process. Cat lover and digital inclusion.",
-      github: "https://github.com/AndreaCSalazar",
-      linkedin: "https://linkedin.com/",
+      nombre: "Frank Monsalve",
+      cargo: "Artista Neotradicional, anime",
+      descripcion: "Artista apasionado por el estilo neotradicional y anime",
+      instagram: "https://instagram.com",
     },
     {
       id: 2,
-      nombre: "Sofía Canizales",
-      cargo: "Developer",
-      descripcion: "Project leader, process developer. Cat lover and mother of one of them.",
-      github: "https://github.com/scanizales",
-      linkedin: "https://www.linkedin.com/in/canizales-sofía",
+      nombre: "Johnatan ",
+      cargo: "Artista cover",
+      descripcion: "Artista especialista en el estilo cover, realismo, color",
+      instagram: "https://instagram.com",
     },
     {
       id: 3,
-      nombre: "Johanna Manzuera",
-      cargo: "Developer",
-      descripcion: "Passionate developer of the fronted process. Cat lover and digital inclusion.",
-      github: "https://github.com/",
-      linkedin: "https://linkedin.com/",
+      nombre: "Martin",
+      cargo: "Artista sombras, minimalista",
+      descripcion: "Artista dedicado al estilo sombras, realismo y tattoos minimalistas",
+      instagram: "https://instagram.com",
     },
-    {
-      id: 4,
-      nombre: "Karina Vasquez",
-      cargo: "Developer",
-      descripcion: "Passionate developer of the fronted process. Cat lover and digital inclusion.",
-      github: "https://github.com/karinavasquez10",
-      linkedin: "https://linkedin.com/",
-    }
   ];
 
   return (
     <div className="miembro-container">
       <div className="paw-background">
         <div className="section-conocenos">
-          <h2>Team</h2>
+          <h2>Equipo</h2>
           <div className="miembros-grid">
             {miembros.map((miembro) => (
               <div key={miembro.id} className="miembro-card">
@@ -51,8 +39,7 @@ const GroupPersons = () => {
                 <p className="cargo">{miembro.cargo}</p>
                 <p className="descripcion">{miembro.descripcion}</p>
                 <div className="social-icons">
-                  <a href={miembro.github} target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-                  <a href={miembro.linkedin} target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+                  <a href={miembro.instagram} target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
                 </div>
               </div>
             ))}
@@ -85,4 +72,4 @@ const GroupPersons = () => {
   );
 };
 
-export default GroupPersons;
+export default Artists;

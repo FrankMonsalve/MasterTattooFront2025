@@ -1,7 +1,7 @@
 import "../styles/global.css";
-import imageOrigin from "../assets/icons/origen.png";
-import imageSalud from "../assets/icons/salud.png";
-import imageDatos from "../assets/icons/datos-curiosos.png";
+import imageCalendar from "../assets/icons/calendar.png";
+import imageStore from "../assets/icons/store1.png";
+import imageStyle from "../assets/icons/style.png";
 import Card from "../components/basics/Card";
 import ConsumoApi from '../components/functionals/ConsumoApi'
 import './home.css'
@@ -9,11 +9,11 @@ import './home.css'
 const Home = () => {
     return (
         <>
-        <h3 className="subtitle-main">What will you know here?</h3>
+        <h3 className="subtitle-main">Nuestros servicios</h3>
         <div className="container-cards">
-           <Card image={imageOrigin} text="Know its origin" />
-           <Card className="middle-card" image={imageSalud} text="More about your health" />
-           <Card image={imageDatos} text="Curious facts" />
+           <Card image={imageCalendar} text="Agenda tu cita" />
+           <Card className="middle-card" image={imageStore} text="Tienda/supply" />
+           <Card image={imageStyle} text="Conoce tu estilo de tattoo" />
         </div>
         <ConsumoApi></ConsumoApi>
         </>
